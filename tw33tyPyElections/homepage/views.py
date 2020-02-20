@@ -3,7 +3,8 @@ from django.http import HttpResponse
 from django.http import Http404
 import random as r
 import pymongo
-from homepage import config
+
+mongo_pw = os.environ['mongo_pw']
 
 client = pymongo.MongoClient(f"mongodb+srv://xtoast:{config.pw}@twts0-5a5vv.azure.mongodb.net/test?retryWrites=true&w=majority")
 db = client.twts0

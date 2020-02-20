@@ -3,14 +3,16 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from django_plotly_dash import DjangoDash
 import pymongo
-from homepage import config
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = DjangoDash('sentiment', external_stylesheets=external_stylesheets)
 
+##### Prepare the database
+mongo_pw = os.environ['mongo_pw']
+
 ## intialize mongodb
-client = pymongo.MongoClient(f"mongodb+srv://xtoast:{config.pw}@twts0-5a5vv.azure.mongodb.net/test?retryWrites=true&w=majority")
+client = pymongo.MongoClient(f"mongodb+srv://xtoast:{mongo_pw}@twts0-5a5vv.azure.mongodb.net/test?retryWrites=true&w=majority")
 db = client.twts0
 coll = db['JanFeb']
 
