@@ -16,6 +16,11 @@ pandas = "==0.25.1"
 gunicorn = "*"
 django-heroku = "*"
 Django = "==2.2.10"
+channels
+daphne
+redis
+django-redis
+channels-redis
 
 [requires]
 python_version = "3.7"
