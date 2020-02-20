@@ -1,0 +1,65 @@
+{% load static %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>tw33tyPy__2020__</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'homepage/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{% static 'homepage/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+</head>
+<body>
+
+  {% include 'partials/nav.html' %}
+
+  <div class='container'>
+
+    <div class='container red white-text'>
+      <div class='col s6 offset-s6'>
+        <div class='card red'>
+          <div class='card-content white-text'>
+            <div class='card-title'><h5>Content Warning:<br></h5></div>
+              <p>The following tweets may contain triggering and/or offensive language. They are uncensored
+              and do no reflect the opinions of the author of this page.
+            </div>
+          </div>
+        </div>
+      </div>
+    <h3 class= "teal-text center">Ratio'd tweets about a few candidates running in the 2020 Primary Elections:</h3>
+    <br>
+      <div class="row">
+        {% include 'partials/joey.html' %}
+        {% include 'partials/lizzy.html' %}
+        {% include 'partials/bernie.html' %}
+    </div>
+    <br>
+  </div>
+<div class='divider'></div>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+
+      <div class='row center'>
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  {% include 'partials/footer.html' %}
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'homepage/js/materialize.js' %}"></script>
+  <script src="{% static 'homepage/js/init.js' %}"></script>
+
+  </body>
+</html>

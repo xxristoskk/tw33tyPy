@@ -1,0 +1,10 @@
+{% load static %}
+{% load staticfiles %}
+
+<div class="col s12 m4 center">
+  <img src="{% static 'homepage/imgs/sanders1.png' %}" alt="" class="circle responsive-img">
+  <h2 class="center teal-text text-accent-4">Bernie</h2>
+  <h5 class="center">Replies / Likes:</h5><p>
+  <h4 class='indigo-text text-lighten-2'>{{ bratio }}</h4>
+  <p class="light left-align">{{ btweet }}</p>
+</div>

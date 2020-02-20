@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% load plotly_dash %}
+
+    <div class="{% plotly_class name='bar' %} card">
+    {% plotly_app name='bar' ratio=0.55 %}
+    </div>
+<br>
+    {{ plot1 | safe }}
+<br>
+<h3 class='teal-text'>Using <a href='https://en.wikipedia.org/wiki/Sentiment_analysis'>Sentiment Analysis</a> on all of the tweets,
+  you can see which candidate's name is most associated with positive language.</h3>
+<div class='divider'></div>
+    <div class="{% plotly_class name='sentiment' %} card">
+    {% plotly_app name='sentiment' ratio=0.55 %}
+    </div>
+<br>
+    {{ plot1 | safe }}
+<br>
+
+    <h4 class='teal-text'>Looking at the distribution of tweets and the sentiment of tweets for each candidate's name.</h4>
+    <br>
+
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="{% static 'homepage/imgs/joe_sentiment.png' %}">
+            </div>
+            <div class="card-content teal-text">
+              <h4>Joey</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="{% static 'homepage/imgs/liz_sentiment.png' %}">
+            </div>
+            <div class="card-content teal-text">
+              <h4>Lizzy</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="{% static 'homepage/imgs/bernie_sentiment.png' %}">
+            </div>
+            <div class="card-content teal-text">
+              <h4>Bernie</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}
