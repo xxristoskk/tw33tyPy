@@ -7,7 +7,7 @@ import os
 
 mongo_pw = os.environ['mongo_pw']
 
-client = pymongo.MongoClient(f"mongodb+srv://xtoast:{config.pw}@twts0-5a5vv.azure.mongodb.net/test?retryWrites=true&w=majority")
+client = pymongo.MongoClient(f"mongodb+srv://xtoast:{mongo_pw}@twts0-5a5vv.azure.mongodb.net/test?retryWrites=true&w=majority")
 db = client.twts0
 coll = db['JanFeb']
 
