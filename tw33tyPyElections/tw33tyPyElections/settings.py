@@ -84,13 +84,13 @@ WSGI_APPLICATION = 'tw33tyPyElections.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.djongo',
-        'NAME': 'twts0',
+        'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': 'twts0',
     }
 }
 
-# db_from_env = dj_database_url.config()
-# DATABASES['default'].update(db_from_env)
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
