@@ -4,6 +4,7 @@ from dash.dependencies import Input, Output
 from django_plotly_dash import DjangoDash
 import pymongo
 import os
+# from homepage import config
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 

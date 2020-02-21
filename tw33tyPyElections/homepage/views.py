@@ -4,6 +4,7 @@ from django.http import Http404
 import random as r
 import pymongo
 import os
+# from homepage import config
 
 mongo_pw = os.environ['mongo_pw']
 
