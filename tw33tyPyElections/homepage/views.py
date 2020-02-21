@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.http import Http404
 import random as r
 import pymongo
+import os
 
 mongo_pw = os.environ['mongo_pw']
 
