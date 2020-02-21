@@ -1,1 +1,1 @@
-web: gunicorn tw33tyPyElections.wsgi —-log-file -
+web: gunicorn tw33tyPyElections.wsgi - log-file -
