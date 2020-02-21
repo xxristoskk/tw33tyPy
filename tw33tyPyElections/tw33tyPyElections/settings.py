@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ['https://git.heroku.com/tw33typy.git']
 
 INSTALLED_APPS = [
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
-    'homepage.apps.HomepageConfig',
+    'tw33tyPyElections.homepage.apps.HomepageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
