@@ -1,1 +1,1 @@
-gunicorn --pythonpath tw33tyPyElections tw33tyPyElections.wsgi
+web: gunicorn --pythonpath tw33tyPyElections tw33tyPyElections.wsgi
