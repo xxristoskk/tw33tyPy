@@ -1,1 +1,1 @@
-web: gunicorn tw33tyPyElections.wsgi - log-file -
+gunicorn --pythonpath tw33tyPyElections tw33tyPyElections.wsgi
