@@ -4,11 +4,11 @@ from django.http import Http404
 import random as r
 import pymongo
 import os
-from homepage import config
+# from homepage import config
 
-# mongo_pw = os.environ['mongo_pw']
+mongo_pw = os.environ['mongo_pw']
 
-client = pymongo.MongoClient(f"mongodb+srv://xtoast:{config.mongo_pw}@twts0-5a5vv.azure.mongodb.net/test?retryWrites=true&w=majority")
+client = pymongo.MongoClient(f"mongodb+srv://xtoast:{mongo_pw}@twts0-5a5vv.azure.mongodb.net/test?retryWrites=true&w=majority")
 db = client.twts0
 coll = db['JanFeb']
 
