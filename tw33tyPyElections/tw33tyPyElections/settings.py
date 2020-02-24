@@ -28,7 +28,7 @@ secret = os.environ['secret']
 SECRET_KEY = secret
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['https://git.heroku.com/tw33typy.git']
 
@@ -83,15 +83,16 @@ WSGI_APPLICATION = 'tw33tyPyElections.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+sql_pw = os.environ['sql_pw']
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'twts0',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'g5by9d8f6ydyv1cx',
+        'USER': 'lhr6naqoj5t0k7vp',
+        'PASSWORD': sql_pw,
+        'HOST': 'i943okdfa47xqzpy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
