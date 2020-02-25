@@ -83,6 +83,7 @@ WSGI_APPLICATION = 'tw33tyPyElections.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
 sql_pw = os.environ['sql_pw']
 
 DATABASES = {
