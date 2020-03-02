@@ -1,3 +1,4 @@
-# 2020 Primary Election Tracker
+# tw33tyPy
+## A data-blog dedicated to analyzing trends on Twitter
 
-This is the beginning of an ongoing project by the name of 'tw33tyPy'. I built a script, using Twint, to collect tweets about three of the (former) frontrunning Primary Election candidates. There were over 400k tweets collected over the course of a couple weeks leading up to the Iowa caucuses.
+As of right now, the blog is still under construction. See my [Medium](https://medium.com/@xristos.katsaros) blog in the meantime to keep up with my stories.
