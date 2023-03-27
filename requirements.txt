@@ -10,7 +10,7 @@ django-heroku
 Django==2.2.10
 channels==2.4.0
 daphne==2.4.1
-redis==3.4.1
+redis==4.5.3
 django-redis==4.11.0
 channels-redis==2.4.1
 dnspython
